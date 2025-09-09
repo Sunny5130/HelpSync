@@ -16,7 +16,7 @@ import { app, server } from "./socket.js";
 connectDB();
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: ["https://help-sync.vercel.app"],
     credentials: true,
   })
 );
