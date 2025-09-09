@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL = "http://localhost:3000/api";
+const BASE_URL = "https://help-sync-api.vercel.app/api";
 
 
 const axiosInstance = axios.create({
