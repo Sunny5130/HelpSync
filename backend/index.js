@@ -22,11 +22,11 @@ app.use(
 );
 
 app.get("/", (req, res) => {
-  res.send("Help Hive!");
+  res.send("Help Sync!");
 });
 
 app.get("/api", (req, res) => {
-  res.send("This is Help Hive API!");
+  res.send("This is Help Sync API!");
 });
 
 app.use(cookieParser());
