@@ -59,7 +59,7 @@ const useChatStore = create((set, get) => ({
     const { authUser } = useAuthStore.getState();
     if (!authUser || get().socket?.connected) return;
 
-    const socket = io("http://localhost:3000", {
+    const socket = io("https://help-sync-api.vercel.app", {
       query: {
         userId: authUser._id,
       },
