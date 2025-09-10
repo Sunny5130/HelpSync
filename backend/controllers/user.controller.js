@@ -63,9 +63,24 @@ export const loginUser = async (req, res) => {
   }
 };
 
+// export const logoutUser = async (req, res) => {
+//   try {
+//     res.cookie("token", "");
+//     return res.status(200).json({ message: "User logged out successfully" });
+//   } catch (error) {
+//     res.status(400).json({ message: "User Logout Failed" });
+//     console.log("Error in logout user component", error);
+//   }
+// };
+
 export const logoutUser = async (req, res) => {
   try {
-    res.cookie("token", "");
+    res.clearCookie("token", {
+      httpOnly: true,
+      secure: true,
+      sameSite: "none",
+      path: "/",
+    });
     return res.status(200).json({ message: "User logged out successfully" });
   } catch (error) {
     res.status(400).json({ message: "User Logout Failed" });
