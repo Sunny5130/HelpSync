@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // ✅ Import Link
 
 import { Heart, Users, Mail, Phone, MapPin, Linkedin } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
@@ -36,47 +37,47 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   className="text-gray-600 hover:text-orange-600 transition-colors text-sm"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/about"
+                <Link
+                  to="/about"
                   className="text-gray-600 hover:text-orange-600 transition-colors text-sm"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/help"
+                <Link
+                  to="/help"
                   className="text-gray-600 hover:text-orange-600 transition-colors text-sm"
                 >
                   Get Help
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/report"
+                <Link
+                  to="/report"
                   className="text-gray-600 hover:text-orange-600 transition-colors text-sm"
                 >
                   Report Issue
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
-          {/* Get in Touch - Both Creators */}
+          {/* Get in Touch */}
           <div className="space-y-4 lg:col-span-2">
             <h4 className="text-lg font-semibold text-gray-800 border-b-2 border-orange-200 pb-2">
               Get in Touch
             </h4>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Creator 1 */}
+              {/* Creator */}
               <div className="space-y-3">
                 <div className="flex items-center space-x-3 text-sm text-gray-600">
                   <Mail className="h-4 w-4 text-orange-500" />
@@ -108,7 +109,6 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-            
             </div>
           </div>
         </div>
