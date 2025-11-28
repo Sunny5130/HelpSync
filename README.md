@@ -8,7 +8,7 @@ It is designed to streamline help and support requests, allowing users to easily
 ## ✨ Features
 
 * 🔐 **User Authentication** – Secure registration, login, and logout functionality with JWT
-* 🛡️ **Role-based Access** – Different access levels for users and admins, I will working on this
+* 🛡️ **Role-based Access** – Different access levels for users and admins, I am working on this
 * 🎫 **Support Requests** – Users can raise support tickets/issues
 * ⏱️ **Real-time Updates** – Track issue status & progress
 * 📱 **Responsive UI** – Modern and clean look with React + Tailwind CSS
@@ -101,4 +101,5 @@ Backend runs on **[http://localhost:5000](http://localhost:5000)**
 
 Contributions, issues, and feature requests are welcome!
 Feel free to fork this repo and submit a pull request.
+
 
